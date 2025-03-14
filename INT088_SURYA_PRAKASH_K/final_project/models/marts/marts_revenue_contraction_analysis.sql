@@ -1,0 +1,6 @@
+-- SELECT
+--     PAYMENT_MONTH,
+--     SUM(CASE WHEN REVENUE_TYPE = '1' THEN REVENUE ELSE 0 END) AS revenue_lost
+-- FROM {{ ref('transform_final') }}
+-- GROUP BY PAYMENT_MONTH
+-- ORDER BY PAYMENT_MONTH
